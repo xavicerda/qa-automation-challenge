@@ -1,0 +1,18 @@
+{
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "QA Automation Dog",
+  "photoUrls": [
+    "https://example.com/qa-automation-dog.jpg"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "automation"
+    }
+  ],
+  "status": "available",
+  "updatedName": "QA Automation Dog Sold"
+}

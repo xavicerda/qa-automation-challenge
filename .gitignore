@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+
+Cypress generated files
+
+cypress/screenshots/
+cypress/downloads/
+
+Temporary files
+
+*.log
+
+Local environment variables
+
+.env
+.env.*
+
+OS files
+
+Thumbs.db
+desktop.ini

@@ -1,0 +1,109 @@
+CONCLUSIONES
+QA AUTOMATION CHALLENGE
+RESULTADO GENERAL
+
+Se implementó una solución de automatización utilizando Cypress para cubrir pruebas funcionales E2E y pruebas de servicios REST API.
+
+La ejecución completa del proyecto finalizó con:
+
+5 pruebas exitosas.
+0 pruebas fallidas.
+0 pruebas pendientes.
+0 pruebas omitidas.
+AUTOMATIZACIÓN E2E
+
+Se automatizó el flujo de compra de SauceDemo utilizando el usuario:
+
+standard_user
+
+y la contraseña:
+
+secret_sauce
+
+El escenario cubre:
+
+Autenticación.
+Selección de dos productos.
+Gestión del carrito.
+Inicio del checkout.
+Diligenciamiento del formulario.
+Finalización de la compra.
+Validación del mensaje de confirmación:
+
+"THANK YOU FOR YOUR ORDER"
+
+AUTOMATIZACIÓN API
+
+Se automatizaron cuatro casos sobre la API de PetStore:
+
+TC-API-001
+Creación de una mascota.
+
+TC-API-002
+Consulta de la mascota mediante su ID.
+
+TC-API-003
+Actualización del nombre y del estado de la mascota.
+
+TC-API-004
+Consulta de la mascota actualizada mediante el filtro de status.
+
+VALIDACIONES REALIZADAS
+
+Las pruebas API validan tanto el código HTTP como información relevante del response body.
+
+Entre las validaciones implementadas se encuentran:
+
+Status code.
+ID de la mascota.
+Nombre.
+Status.
+Existencia de la mascota en la respuesta.
+Confirmación de los valores modificados.
+DISEÑO DE LA SOLUCIÓN
+
+Para la automatización E2E se utiliza una estructura basada en Page Object Model.
+
+Los Page Objects permiten separar:
+
+Selectores.
+Acciones de usuario.
+Lógica de interacción con la interfaz.
+
+Los datos de prueba se manejan mediante fixtures.
+
+Esta separación facilita el mantenimiento y permite reutilizar componentes en futuros casos de prueba.
+
+EVIDENCIAS
+
+Las ejecuciones generan videos mediante Cypress.
+
+Evidencias disponibles:
+
+cypress/videos/e2e/sauceDemoCheckout.cy.js.mp4
+
+cypress/videos/api/petStore.cy.js.mp4
+
+HALLAZGOS
+
+Durante las ejecuciones se identificó un warning de Cypress relacionado con la eliminación de perfiles temporales de Microsoft Edge:
+
+EPERM: operation not permitted
+
+El warning no afecta la ejecución de las pruebas, ya que Cypress continúa con la ejecución y finaliza correctamente.
+
+No se presentaron fallos funcionales durante la última ejecución.
+
+CONCLUSIÓN FINAL
+
+La solución implementada cumple con los escenarios solicitados para las opciones seleccionadas:
+
+E2E - Opción 2:
+SauceDemo.
+
+API - Opción 2:
+PetStore.
+
+La ejecución final obtuvo 5 casos exitosos y 0 fallos.
+
+La solución queda preparada para ser versionada en GitHub y entregada mediante un archivo comprimido ZIP, incluyendo código fuente, configuración, fixtures, documentación y evidencias de ejecución.
